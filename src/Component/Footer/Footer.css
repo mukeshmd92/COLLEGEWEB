@@ -1,0 +1,32 @@
+.footer{
+    margin:  auto;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    border-top: 1px solid #797979;
+   padding-top: 105px;
+   padding-bottom: 45px;
+background:#212EA0 ;
+color: aliceblue;
+
+}
+.footer ul li{
+    list-style: none;
+    display: inline;
+    margin: 20px;
+}
+/* ----------media query------0 */
+@media(max-width:412px){
+    .footer{
+        display: block;
+text-align: center;
+ padding-top: 15px;
+   padding-bottom: 25px;
+    }
+    .footer ul li{
+        margin: 10px;
+    }
+   .footer ul{
+    margin-top: 10px;
+   }
+}
