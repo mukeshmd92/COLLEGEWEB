@@ -6,10 +6,12 @@ import {Link} from 'react-scroll'
 const Navbar = () => {
 const [sticky, setsticky]=useState(false)
 useEffect(()=>{
-  window.addEventListener("scroll",()=>{
+   const handleScroll = () => {
     window,scrollY>700?setsticky(true):setsticky(false)
-  })
-},[])
+   }
+ window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 const[mobilemenu,setMobilemenu]=useState(false)
 // const togglemenu=()=>{
 //   setMobilemenu(!mobilemenu)
