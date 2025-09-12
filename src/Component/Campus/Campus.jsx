@@ -15,7 +15,11 @@ const Campus = () => {
             <img src={gallery_3} alt="" />
             <img src={gallery_4} alt="" />
          </div>
+
          <button className='btn dark-btn' >See Morre Here {dropdown}<img src={white_arrow} alt="" /></button>
+
+         <button className='btn dark-btn' >Explore for more {button} <img src={white_arrow} alt="" /></button>
+
         
 
     </Element>
